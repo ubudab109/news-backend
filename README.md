@@ -1,5 +1,6 @@
 # NEWS FEED APPLICATION
-### THIS IS THE BACKEND APPLICATION FOR NEWS FEED
+### THIS IS THE BACK-END APPLICATION FOR NEWS FEED
+### FRONT-END REPOSITORY: https://github.com/ubudab109/news-frontend
 
 ## Requirements
 - Docker Compose (Make sure You have Docker in Your operating system) https://www.docker.com/
