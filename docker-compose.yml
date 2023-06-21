@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  database:
+    image: mariadb
+    container_name: database
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=articles
+  php-apache:
+    container_name: php-apache
+    build:
+      context: ./
+    ports:
+      - '8080:80'
+    volumes:
+      - ./:/var/www/laravel_docker
+      - ./site.conf:/etc/apache2/sites-enabled/000-default.conf
+    depends_on:
+      - database

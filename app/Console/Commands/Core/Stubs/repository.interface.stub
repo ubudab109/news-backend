@@ -1,0 +1,17 @@
+<?php
+
+namespace DummyNamespace;
+use DummyInterfaceNamespace;
+
+class DummyClass implements DummyInterface
+{
+    /**
+    * @var ModelName
+    */
+    protected $model;
+
+    public function __construct()
+    {
+      //$this->model = $model;
+    }
+}
